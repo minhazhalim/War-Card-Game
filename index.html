@@ -6,13 +6,32 @@
      <meta name="viewport" content="width=device-width,initial-scale=1.0">
      <title>War Card Game</title>
      <link rel="stylesheet" href="style.css">
-     <script src="script.js" type="module"></script>
+     <script src="script.js" defer></script>
 </head>
 <body>
-     <div class="computer-deck deck"></div>
-     <div class="computer-card-slot card-slot"></div>
-     <div class="text"></div>
-     <div class="player-deck deck"></div>
-     <div class="player-card-slot card-slot"></div>
+     <header>
+          <div class="header-title-container"><h1>hunt the ace</h1></div>
+          <div class="header-round-info-container">
+               <div class="header-image-container"><img src="./images/AceSpades.png" alt="Ace Spades" class="header-image"></div>
+               <div class="header-score-container">
+                    <h2 class="score">score&nbsp;<span class="badge">0</span></h2>
+               </div>
+               <div class="header-round-container">
+                    <h2 class="round">round&nbsp;<span class="badge">0</span></h2>
+               </div>
+          </div>
+          <div class="header-status-info-container"><p class="current-status">click 'play game' button to play game</p></div>
+          <div class="header-button-container">
+               <div class="game-play-button-container"><button class="play-game" id="playGame">play game</button></div>
+          </div>
+     </header>
+     <main>
+          <div class="card-container">
+               <div class="card-position-a"></div>
+               <div class="card-position-b"></div>
+               <div class="card-position-c"></div>
+               <div class="card-position-d"></div>
+          </div>
+     </main>
 </body>
 </html>
