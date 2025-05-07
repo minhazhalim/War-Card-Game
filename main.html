@@ -2,17 +2,34 @@
 <html lang="en">
 <head>
      <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width,initial-scale=1.0">
      <title>War Card Game</title>
      <link rel="stylesheet" href="design.css">
-     <script src="development.js" type="module"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;600&display=swap" rel="stylesheet">
+     <script src="development.js" defer></script>
 </head>
 <body>
-     <div class="computer-deck deck"></div>
-     <div class="computer-card-slot card-slot"></div>
-     <div class="text"></div>
-     <div class="player-deck deck"></div>
-     <div class="player-card-slot card-slot"></div>
+     <div class="container">
+          <h1>card wars</h1>
+          <h3>you vs computer</h3>
+          <div class="cards">
+               <div>
+                    <h2>you</h2>
+                    <img src="https://deckofcardsapi.com/static/img/back.png" alt="Player Card" id="player-card">
+               </div>
+               <div>
+                    <h2>computer</h2>
+                    <img src="https://deckofcardsapi.com/static/img/back.png" alt="Computer Card" id="computer-card">
+               </div>
+          </div>
+          <button type="button" onclick="drawCards()">draw cards</button>
+          <div class="scoreboard">
+               🧍 your score: <span id="player-score">0</span><br>
+               🤖 computer score: <span id="computer-score">0</span>
+          </div>
+          <div class="result" id="result-text"></div>
+     </div>
 </body>
 </html>
